@@ -32,7 +32,7 @@ function Register() {
       
     function submitUser(event) {
         // goi api registration ben BE
-        postData(process.env.REACT_APP_API_URL + 'api/post', user)
+        postData('https://week04-be.onrender.com/api/post', user)
         .then((data) => {
           try {
             window.alert(`Bạn đã đăng ký form ${data.Message}!`);
